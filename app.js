@@ -6,6 +6,6 @@ const port = 3000
 
 
 
-app.get('/', (req, res) => res.send('My ec2 server works!'))
+app.get('/', (req, res) => res.send(`My ec2 server works! ${req.hostname}`))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
